@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/mean-stack')
+mongoose.connect('mongodb://ds123312.mlab.com:23312/mongo-db')
   .then(() =>  console.log('connection successful'))
   .catch((err) => console.error(err));
 
