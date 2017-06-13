@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://vmalkar:Corenombank@ds123312.mlab.com:23312/mongo-db')
+mongoose.connect('mongodb://vmalkar:Corenombank@ds123312.mlab.com:23312/mean-demo')
   .then(() =>  console.log('connection successful'))
   .catch((err) => console.error(err));
 
