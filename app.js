@@ -7,12 +7,15 @@ var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost:27017/mean-demo')
+mongoose.connect('mongodb://localhost:27017/mongo-db')
   .then(() =>  console.log('connection successful'))
   .catch((err) => console.error(err));
 
 var book = require('./routes/book');
 var app = express();
+
+// view engine setup
+app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
